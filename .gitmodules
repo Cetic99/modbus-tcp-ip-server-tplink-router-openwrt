@@ -1,0 +1,3 @@
+[submodule "SERVER/3pp/libmodbus"]
+	path = SERVER/3pp/libmodbus
+	url = https://github.com/stephane/libmodbus

@@ -1,0 +1,7 @@
+# Exclude build directories
+build/
+*/build/
+
+/.vscode/
+# Exclude IDE specific files
+.vscode/
