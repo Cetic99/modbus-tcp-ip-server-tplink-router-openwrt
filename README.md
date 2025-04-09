@@ -86,11 +86,14 @@ make libmodbus_build
 make server
 make server_install TARGET=root@192.168.1.1:/root
 ```
+On router run this server. If everything is ok you should see print as shown below
+
+![image](https://github.com/user-attachments/assets/f80a9f15-c9f4-4567-8394-46deefe5d4c4)
 
 ---
 
 ## Example Usage
-
+## Linux
 ### Read Coils
 Reads 10 coils starting from address 0:
 ```bash
@@ -114,4 +117,20 @@ Reads 10 holding registers starting from address 0:
 ```bash
 modpoll -m tcp -c 10 -t 4 192.168.1.1
 ```
+## Windows
+1. Use tool like Modbus Poll
+   ![image](https://github.com/user-attachments/assets/5b392356-1c46-4fbd-a250-a0a817651cc8)
+3. Press F3 to setup connection
+   ![image](https://github.com/user-attachments/assets/922cee1a-95b6-4179-bd1b-53aaa829b74a)
+4. Right click on window and select "Read/write Definition..."
+   ![image](https://github.com/user-attachments/assets/e604157a-f452-4c92-b5e9-3f29b9007440)
+5. There you can select which data you want repeatedly read
+   ![image](https://github.com/user-attachments/assets/90948d5a-dfd7-4e1f-bccd-b41c640597ac)
+6. If you select "Read Input Register" and then right click on windows and then "Link To Chart"
+   You can print this data to graph. In this example input register is configured to print ramp.
+   ![image](https://github.com/user-attachments/assets/4a9a6d5a-22fc-4609-a991-fb233feaad0f)
+7. Go to "Display"->"Real Time Charting" and start monitoring
+   ![image](https://github.com/user-attachments/assets/8be2d481-281e-41da-b57c-0af8f7b67ec7)
+
+
 
